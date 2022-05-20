@@ -6,7 +6,7 @@ body {
   max-width: 500px;
   margin: auto;
 }
-a {
+a:visited:link:active {
   color: hsl(344, 100%, 83%);
   text-decoration: none;
 }
