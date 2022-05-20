@@ -1,6 +1,7 @@
 body {
   background-color: hsl(210, 10%, 32%);
   color: hsl(0, 0%, 87%);
+  font-family: sans-serif;
   font-size: 18px;
 }
 .content {
@@ -12,28 +13,16 @@ p {
   line-height: 1.5em;
 }
 ul {
-  padding-inline-start: 0px;
+  padding-inline-start: 20px;
   line-height: 1.7em;
 }
 li {
-  display: flex;
   font-weight: bold;
+}
+li:hover {
+  color: hsl(344, 100%, 83%);
 }
 a {
   color: hsl(344, 100%, 83%);
   text-decoration: none;
-}
-a::after {
-  content: "";
-  display: block;
-  position: initial;
-  margin: 0 auto;
-  height: 2px;
-  width: 0;
-  background: transparent;
-  transition: width 0.66s ease, background-color 1s ease !important;
-}
-a:hover::after {
-  width: 100%;
-  background: hsl(0, 0%, 87%);
 }
