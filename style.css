@@ -4,31 +4,36 @@ body {
   font-size: 18px;
 }
 .content {
-  max-width: 600px;
+  max-width: 570px;
   margin: auto;
-  top: 150px;
+  margin-top: 150px;
+}
+p {
+  line-height: 1.5em;
 }
 ul {
-  padding-inline-start: 20px;
-  line-height: 1.5em;
+  padding-inline-start: 0px;
+  line-height: 1.7em;
+}
+li {
+  display: flex;
+  font-weight: bold;
 }
 a {
   color: hsl(344, 100%, 83%);
   text-decoration: none;
-  font-weight: bold;
 }
-a:after {
+a::after {
   content: "";
   display: block;
   position: initial;
-  margin: auto;
-  margin-top: 3px;
-  height: 1px;
+  margin: 0 auto;
+  height: 2px;
   width: 0;
   background: transparent;
-  transition: width 1s ease, background-color 1s ease !important;
+  transition: width 0.66s ease, background-color 1s ease !important;
 }
-a:hover:after {
+a:hover::after {
   width: 100%;
   background: hsl(0, 0%, 87%);
 }
